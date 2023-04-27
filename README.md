@@ -6,3 +6,4 @@
 
 # Google reCAPTCHA
 ## v2 'I am not a robot'
+![Screenshot](v2-1.png)
