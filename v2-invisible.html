@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <script>
+      var onSubmit = function(token) {
+        grecaptcha.execute();
+      };
+
+      var onloadCallback = function() {
+        grecaptcha.render('submit', {
+          'sitekey' : '6LdtfrolAAAAAJkNnk9JI0FyUwQ3l24K2P19c_Hl',
+          // sitekey: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', // site key for automation
+          'callback' : onSubmit
+        });
+      };
+  </script>
+  </head>
+  </head>
+  <body>
+    <nav>
+      <a href="/v2-robot.html" aria-current="page">V2 Robot</a>
+      <a href="/v2-invisible.html">V2 Invisible page</a>
+      <a href="/v3.html">V3</a>
+    </nav>
+    <main>
+      <h1>v2 invisible GRC</h1>
+      <form action="?" method="POST">
+        <input id="submit" type="submit" value="Submit">
+      </form>
+      <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+          async defer>
+      </script>
+    </main>
+  </body>
+</html>

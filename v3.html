@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <script>
+      function onSubmit(token) {
+        console.log(`toke ${token}`)
+      }
+    </script>
+  </head>
+  </head>
+  <body>
+    <nav>
+      <a href="/v2-robot.html" aria-current="page">V2 Robot</a>
+      <a href="/v2-invisible.html">V2 Invisible page</a>
+      <a href="/v3.html">V3</a>
+    </nav>
+    <main>
+      <h1>v3 GPC</h1>
+      <form action="?" method="POST">
+        <button class="g-recaptcha" 
+        data-sitekey="6LcDt7olAAAAAPyjJaU0dF5aK8t5DSwAcTgR8Jkj" 
+        data-callback='onSubmit' 
+        data-action='forgotPassword'>Submit</button>
+      </form>
+      <script src="https://www.google.com/recaptcha/api.js"></script>
+    </main>
+  </body>
+</html>

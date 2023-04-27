@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <script>
+      function onLoadCallback() {
+        grecaptcha.render('divRecaptcha', {
+          // sitekey: '6LdOZLolAAAAACyRN_d2W43zx-Ebs4EmseDOEERr', // site key
+          sitekey: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', // site key for automation
+          callback: successCallback,
+        });
+      }
+    </script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=onLoadCallback&render=explicit"
+      async
+      defer
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/v2-robot.html" aria-current="page">V2 Robot</a>
+      <a href="/v2-invisible.html">V2 Invisible page</a>
+      <a href="/v3.html">V3</a>
+    </nav>
+    <main>
+      <h1>V2 I am not a robot GRC</h1>
+      <div class="g-recaptcha" id="divRecaptcha"></div>
+    </main>
+  </body>
+</html>
